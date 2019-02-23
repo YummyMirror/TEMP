@@ -5,9 +5,10 @@ import java.util.Objects;
 public class Test1 {
     private static String a = "a";
     private static String b = "b";
+    private static String c = "c";
 
     public static void main(String[] args) {
-        System.out.println(stringConcatenation(a, b, "yeah"));
+        System.out.println(stringConcatenation(a, b, c));
         iterating(Arrays.asList("a", "b", "c"));
     }
 
