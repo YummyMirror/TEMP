@@ -5,4 +5,10 @@ public class Feature3 {
         System.out.println(PATH);
         System.out.println("Path is: " + PATH);
     }
+
+    private static void sayFollowing(String value) {
+        if (value != null && !value.isEmpty()) {
+            System.out.println("Saying: " + value);
+        }
+    }
 }
