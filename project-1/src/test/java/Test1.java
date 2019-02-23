@@ -2,9 +2,10 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Test1 {
+    private static String a = "a";
+    private static String b = "b";
+
     public static void main(String[] args) {
-        String a = "a";
-        String b = "b";
         System.out.println(stringConcatenation(a, b, "yeah"));
     }
 
