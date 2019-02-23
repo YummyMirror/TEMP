@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 public class Test1 {
@@ -7,6 +8,7 @@ public class Test1 {
 
     public static void main(String[] args) {
         System.out.println(stringConcatenation(a, b, "yeah"));
+        iterating(Arrays.asList("a", "b", "c"));
     }
 
     private static String stringConcatenation(String... strings) {
@@ -19,5 +21,10 @@ public class Test1 {
             result = builder.toString();
         }
         return result;
+    }
+
+    private static void iterating(List<String> strings) {
+        Objects.requireNonNull(strings);
+        strings.forEach(System.out::println);
     }
 }
